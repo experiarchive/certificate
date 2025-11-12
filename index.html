@@ -1,62 +1,357 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>손해평가사 랜딩</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #eef2fa;
-      font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-      padding: 24px 12px 40px;
-    }
-    .content-wrapper,
-    .form-wrapper {
-      width: min(100%, 860px);
-    }
-    figure {
-      margin: 0 0 24px;
-      width: 100%;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 12px;
-      box-shadow: 0 14px 30px rgba(5, 15, 40, 0.18);
-    }
-    .form-wrapper {
-      width: min(100%, 860px);
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 14px 30px rgba(5, 15, 40, 0.12);
-      padding: 16px;
-    }
-    iframe {
-      width: 100%;
-      border: none;
-      border-radius: 12px;
-      min-height: 650px;
-    }
-  </style>
-</head>
-<body>
-  <div class="content-wrapper">
-    <figure>
-      <img src="landing_copy_58149_0_1749000155_43067711.png" alt="수령 시 10명 중 9명 이상 합격 안내 이미지" />
-    </figure>
-    <figure>
-      <img src="landing_top_58149_1750234844_2_39034063.gif" alt="국가공인 손해평가사 안내 상단 배너" />
-    </figure>
-  </div>
-  <div class="form-wrapper">
-    <iframe src="https://marketclub.cafe24.com/insert_form0.php?it=740&pt=hominyaya" title="손해평가사 신청 폼"></iframe>
-  </div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>손해평가사 랜딩</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUIT:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Pretendard"', '"SUIT"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --hero-media-width: 100%;
+      }
+      .hero-bound {
+        max-width: var(--hero-media-width, 100%);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-neutral-50 font-display">
+    <main class="flex flex-col items-center w-full">
+      <section class="w-full flex flex-col items-center">
+        <div class="w-full flex justify-center">
+          <div
+            class="hero-bound w-full flex items-center justify-center gap-4 bg-white px-4 py-3 text-center"
+          >
+            <img
+              src="태극마크.jpg"
+              alt="태극 문양 로고"
+              class="h-12 w-auto object-contain"
+              loading="lazy"
+            />
+            <span class="text-xl sm:text-2xl font-bold text-[#0F172A]">
+              농림축산식품부
+            </span>
+          </div>
+        </div>
+        <div class="w-full flex justify-center">
+          <div class="hero-bound w-full">
+            <a
+              href="data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%3Chtml%20lang%3D%22ko%22%3E%3Chead%3E%3Cmeta%20charset%3D%22utf-8%22%2F%3E%3Ctitle%3E%EC%83%81%EB%8B%B4%20%EC%8B%A0%EC%B2%AD%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ctenping%20class%3D%22adsbytenping%22%20style%3D%22width%3A100%25%3B%20margin%3A0%20auto%3B%20display%3Ablock%3B%22%20tenping-ad-type%3D%22CInmlFSNPJoo9rBMK%252brlTg%253d%253d%22%20tenping-ad-client%3D%22YB5zJhYSsND30S8%252b6AfDDBt6Knx30LS8lfu4SlQnfo8BP3A58iAErJKpG5xjk3jk%22%20tenping-ad-campaign%3D%222017041310160001%22%20tenping-ad-distributionAddID%3D%222025111216250003%22%20tenping-ad-contain_image%3D%22false%22%20tenping-ad-contain_logo%3D%22false%22%20tenping-ad-contain_Plugin%3D%22false%22%20tenping-ad-contain_TpCall%3D%22false%22%20tenping-ad-theme%3D%22white%22%3E%3C%2Ftenping%3E%3Cscript%20async%20src%3D%22%2F%2Fads.tenping.kr%2Fscripts%2Fadsbytenping.min.js%22%3E%3C%2Fscript%3E%3C%2Fbody%3E%3C%2Fhtml%3E"
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex w-full focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
+              aria-label="히어로 이미지 클릭 시 상담 신청 페이지로 이동"
+            >
+              <img
+                id="heroImage"
+                src="섹션1.webp"
+                alt="손해평가사 랜딩 히어로 이미지"
+                class="block w-full h-auto max-w-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="w-full flex justify-center mt-2 sm:mt-4 mb-5 sm:mb-10 px-3 sm:px-6">
+          <div class="hero-bound w-full">
+            <div
+              class="relative overflow-hidden rounded-3xl bg-white/90 backdrop-blur-lg shadow-[0_20px_60px_rgba(15,23,42,0.15)] ring-1 ring-white/60"
+            >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#f0f5ff] via-[#fdf2f8] to-[#ecfdf5] opacity-90"
+            ></div>
+            <div
+              class="relative flex w-full flex-row items-center gap-4 px-6 py-6 text-left"
+            >
+              <img
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f381/512.webp"
+                alt="선물 상자 이모지"
+                class="h-12 w-12 drop-shadow-lg"
+                loading="lazy"
+              />
+              <div class="flex flex-1 flex-col text-left min-w-0">
+                <span
+                  class="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500"
+                >
+                  limited today
+                  <span class="h-[2px] w-12 rounded-full bg-slate-200"></span>
+                </span>
+                <p class="text-lg sm:text-xl font-semibold text-slate-900 leading-snug">
+                  <span class="block">
+                    오늘 상담자 한정
+                  </span>
+                  <span class="block mt-1 text-2xl sm:text-[26px] font-extrabold text-transparent bg-gradient-to-r from-pink-500 via-rose-500 to-violet-500 bg-clip-text drop-shadow-[0_4px_12px_rgba(244,114,182,0.35)]">
+                    적중률 96% 합격 예상문제 PDF 즉시 제공
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-white mt-2 sm:mt-6 flex flex-col items-center px-3 sm:px-6">
+        <div class="hero-bound w-full">
+          <div class="w-full overflow-x-auto">
+            <img
+              src="섹션2.webp"
+              alt="불안한 현재와 안정된 미래를 대비한 이미지"
+              class="block w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="max-w-[700px] mx-auto text-center py-8 sm:py-16">
+          <h2 class="text-[32px] font-bold text-[#1F2937]">
+            지금의 일, 5년 뒤에도 자신 있나요?
+          </h2>
+          <p class="mt-6 text-[18px] leading-[1.7] text-[#4B5563]">
+            수입은 줄고, 일은 힘들고, 불안은 커집니다.<br />
+            하지만 ‘자격’을 갖춘 사람은 위기가 기회가 됩니다.
+          </p>
+          <div
+            class="mt-10 rounded-3xl bg-[#E0F2FE] px-6 py-12 shadow-sm"
+          >
+            <p
+              class="text-xl sm:text-2xl font-bold text-[#1F2937] leading-[1.6] tracking-[0.2px]"
+            >
+              “<span class="text-[#2456A6]">준비만 해도 보상</span>받고, 합격하면
+              <span class="text-[#2456A6]">전액 돌려받는 자격</span>.”
+            </p>
+            <p
+              class="mt-2 text-base sm:text-lg font-medium text-[#1F2937] leading-[1.6] tracking-[0.2px]"
+            >
+              “이보다 확실한 시작은 없습니다.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-white px-4 sm:px-6 pt-2 sm:pt-4 pb-16 sm:pb-20">
+        <div
+          class="max-w-7xl mx-auto"
+        >
+          <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-[28px] sm:text-[36px] font-bold text-[#1F2937]">
+              손해평가사, 불안한 현실을 바꾸는 자격입니다.
+            </h2>
+            <p
+              class="mt-4 text-base sm:text-lg text-[#4B5563] leading-relaxed max-w-2xl mx-auto px-2 sm:px-0"
+            >
+              정부 위탁직으로 안정된 일감이 이어지고, 40대 이후에도 꾸준히 활동 가능합니다. 경험보다 ‘자격’이 수입을
+              결정합니다.
+            </p>
+          </div>
+
+          <div class="mt-8 w-full flex justify-center">
+            <div class="hero-bound w-full rounded-3xl overflow-hidden shadow-lg shadow-slate-200">
+              <img
+                src="섹션3.webp"
+                alt="전문가가 서류를 검토하는 모습"
+                class="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <section
+            class="hero-bound w-full mx-auto bg-white text-center py-10 px-4 sm:px-6"
+          >
+            <div
+              class="bg-gradient-to-b from-[#E0F2FE] via-white to-white rounded-2xl shadow-sm p-6"
+            >
+              <img
+                src="income_3d.png"
+                alt="3D 수입 아이콘"
+                class="w-20 h-20 mx-auto mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-2xl font-bold text-[#2456A6]">
+                목표보다 더 커지는
+                <span
+                  class="block mt-1 text-4xl sm:text-[40px] font-black text-transparent bg-gradient-to-r from-[#FFCC00] via-[#FF7A18] to-[#F43F5E] bg-clip-text drop-shadow-[0_10px_25px_rgba(244,63,94,0.35)]"
+                >
+                  월 500만 원 수입
+                </span>
+              </h3>
+              <p class="mt-3 text-gray-600 leading-relaxed">
+                손해평가사는 단기 알바가 아닌,<br />정부가 위탁하는 장기 수익 구조입니다.
+              </p>
+            </div>
+
+            <div
+              class="mt-10 rounded-2xl shadow-sm p-6 bg-[#F9FAFB]"
+            >
+              <h3 class="text-2xl font-bold text-[#2456A6]">
+                정부 위탁 중심의
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2456A6] via-[#1E40AF] to-[#6366F1]">
+                  안정된 일감 구조
+                </span>
+              </h3>
+              <p class="mt-2 text-gray-600 leading-relaxed">
+                <span class="font-semibold text-[#1F2937]">농작물재해보험</span>, <span class="font-semibold text-[#1F2937]">손해평가조합</span> 등<br />
+                공공기관 중심의 일거리로<br />
+                <span class="inline-block mt-1 rounded-full bg-[#E0F2FE] px-3 py-1 text-[#2456A6] font-semibold">
+                  생활 기반이 흔들리지 않습니다.
+                </span>
+              </p>
+              <img
+                src="취업처.webp"
+                alt="손해평가사 취업처"
+                class="w-full h-auto rounded-xl shadow-sm object-cover mt-4"
+                loading="lazy"
+              />
+            </div>
+
+            <a
+              href="data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%3Chtml%20lang%3D%22ko%22%3E%3Chead%3E%3Cmeta%20charset%3D%22utf-8%22%2F%3E%3Ctitle%3E%EC%83%81%EB%8B%B4%20%EC%8B%A0%EC%B2%AD%3C%2Ftitle%3E%3C%2Fhead%3E%3Cbody%3E%3Ctenping%20class%3D%22adsbytenping%22%20style%3D%22width%3A100%25%3B%20margin%3A0%20auto%3B%20display%3Ablock%3B%22%20tenping-ad-type%3D%22CInmlFSNPJoo9rBMK%252brlTg%253d%253d%22%20tenping-ad-client%3D%22YB5zJhYSsND30S8%252b6AfDDBt6Knx30LS8lfu4SlQnfo8BP3A58iAErJKpG5xjk3jk%22%20tenping-ad-campaign%3D%222017041310160001%22%20tenping-ad-distributionAddID%3D%222025111216250003%22%20tenping-ad-contain_image%3D%22false%22%20tenping-ad-contain_logo%3D%22false%22%20tenping-ad-contain_Plugin%3D%22false%22%20tenping-ad-contain_TpCall%3D%22false%22%20tenping-ad-theme%3D%22white%22%3E%3C%2Ftenping%3E%3Cscript%20async%20src%3D%22%2F%2Fads.tenping.kr%2Fscripts%2Fadsbytenping.min.js%22%3E%3C%2Fscript%3E%3C%2Fbody%3E%3C%2Fhtml%3E"
+              target="_blank"
+              rel="noreferrer"
+              class="mt-10 inline-flex items-center justify-center bg-[#2456A6] text-white font-bold py-4 px-8 rounded-xl shadow-md hover:bg-[#1E3A8A] transition-all duration-200 focus:outline-none focus-visible:ring-4 focus-visible:ring-[#93C5FD]"
+            >
+              무료 상담으로 내 가능성 알아보기
+            </a>
+          </section>
+        </div>
+      </section>
+
+      <section
+        id="benefit-support"
+        class="w-full bg-[#F9FAFB] text-center py-16 px-4 sm:px-6"
+      >
+        <div class="hero-bound w-full max-w-lg mx-auto">
+          <h2 class="text-3xl font-bold text-[#1F2937] mb-10">
+            취업지원 혜택 안내
+          </h2>
+
+          <div
+            class="relative overflow-hidden bg-white rounded-2xl shadow-sm p-6 border border-gray-200 hover:shadow-xl transition cursor-pointer"
+          >
+            <div class="absolute inset-x-6 top-0 h-1 rounded-full bg-gradient-to-r from-[#2456A6] to-[#60A5FA]"></div>
+            <div class="flex items-center justify-center mb-4 mt-2 gap-3">
+              <div
+                class="bg-[#2456A6] text-white font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm"
+              >
+                01
+              </div>
+              <div class="bg-white/90 backdrop-blur p-2 rounded-full shadow-[0_8px_20px_rgba(15,23,42,0.15)]">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/8371/8371954.png"
+                  alt="국가공인 자격증 아이콘"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-[#2456A6]">
+              국가공인자격증 취득
+            </h3>
+            <p class="text-[#E11D48] font-semibold mt-2 tracking-wide">
+              전문가 무료 컨설팅
+            </p>
+            <p class="text-gray-600 mt-3 leading-relaxed">
+              무제한 <span class="font-semibold text-[#1F2937]">1:1 전문가 상담</span>으로
+              학습 단계별 맞춤 전략을 드립니다.
+            </p>
+          </div>
+
+          <div
+            class="relative overflow-hidden bg-white rounded-2xl shadow-sm p-6 border border-gray-200 mt-6 hover:shadow-xl transition cursor-pointer"
+          >
+            <div class="absolute inset-x-6 top-0 h-1 rounded-full bg-gradient-to-r from-[#E11D48] via-[#F97316] to-[#FACC15]"></div>
+            <div class="flex items-center justify-center mb-4 mt-2 gap-3">
+              <div
+                class="bg-[#2456A6] text-white font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm"
+              >
+                02
+              </div>
+              <div class="bg-white/90 backdrop-blur p-2 rounded-full shadow-[0_8px_20px_rgba(15,23,42,0.15)]">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/8374/8374057.png"
+                  alt="적중문제 아이콘"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-[#2456A6]">
+              손해평가사 적중문제 제공
+            </h3>
+            <p class="text-[#E11D48] font-semibold mt-2 tracking-wide">
+              96% 적중문제 무료 제공
+            </p>
+            <p class="text-gray-600 mt-3 leading-relaxed">
+              최신 기출 가이드를 포함한
+              <span class="text-[#2456A6] font-semibold">PDF·영상 풀이</span>까지 한 번에 받아보세요.
+            </p>
+          </div>
+
+          <div
+            class="relative overflow-hidden bg-white rounded-2xl shadow-sm p-6 border border-gray-200 mt-6 hover:shadow-xl transition cursor-pointer"
+          >
+            <div class="absolute inset-x-6 top-0 h-1 rounded-full bg-gradient-to-r from-[#14B8A6] via-[#0EA5E9] to-[#6366F1]"></div>
+            <div class="flex items-center justify-center mb-4 mt-2 gap-3">
+              <div
+                class="bg-[#2456A6] text-white font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm"
+              >
+                03
+              </div>
+              <div class="bg-white/90 backdrop-blur p-2 rounded-full shadow-[0_8px_20px_rgba(15,23,42,0.15)]">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/7726/7726148.png"
+                  alt="진로 상담 아이콘"
+                  class="w-10 h-10"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-[#2456A6]">
+              자격 취득 후 진로 상담
+            </h3>
+            <p class="text-[#E11D48] font-semibold mt-2 tracking-wide">
+              취업률 90% 육박
+            </p>
+            <p class="text-gray-600 mt-3 leading-relaxed">
+              협회 연계 <span class="font-semibold text-[#1F2937]">일자리 자동 매칭</span>으로
+              취득 후 빠르게 현장에 투입됩니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const heroImg = document.getElementById("heroImage");
+      const updateHeroWidth = () => {
+        if (!heroImg) return;
+        const width = heroImg.getBoundingClientRect().width;
+        document.documentElement.style.setProperty(
+          "--hero-media-width",
+          `${width}px`
+        );
+      };
+      window.addEventListener("load", updateHeroWidth);
+      window.addEventListener("resize", updateHeroWidth);
+      heroImg?.addEventListener("load", updateHeroWidth);
+    </script>
+  </body>
 </html>
