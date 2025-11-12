@@ -14,14 +14,16 @@
       flex-direction: column;
       align-items: center;
       gap: 24px;
-      padding: 24px 12px 32px;
+      padding: 24px 12px 40px;
+    }
+    .content-wrapper,
+    .form-wrapper {
+      width: min(100%, 860px);
     }
     figure {
-      margin: 0;
+      margin: 0 0 24px;
       width: 100%;
     }
-    .panel-copy { width: min(100%, 860px); }
-    .panel-top { width: min(100%, 820px); }
     img {
       width: 100%;
       height: auto;
@@ -29,14 +31,32 @@
       border-radius: 12px;
       box-shadow: 0 14px 30px rgba(5, 15, 40, 0.18);
     }
+    .form-wrapper {
+      width: min(100%, 860px);
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 14px 30px rgba(5, 15, 40, 0.12);
+      padding: 16px;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      min-height: 650px;
+    }
   </style>
 </head>
 <body>
-  <figure class="panel-copy">
-    <img src="landing_copy_58149_0_1749000155_43067711.png" alt="수령 시 10명 중 9명 이상 합격 안내 이미지" />
-  </figure>
-  <figure class="panel-top">
-    <img src="landing_top_58149_1750234844_2_39034063.gif" alt="국가공인 손해평가사 안내 상단 배너" />
-  </figure>
+  <div class="content-wrapper">
+    <figure>
+      <img src="landing_copy_58149_0_1749000155_43067711.png" alt="수령 시 10명 중 9명 이상 합격 안내 이미지" />
+    </figure>
+    <figure>
+      <img src="landing_top_58149_1750234844_2_39034063.gif" alt="국가공인 손해평가사 안내 상단 배너" />
+    </figure>
+  </div>
+  <div class="form-wrapper">
+    <iframe src="https://marketclub.cafe24.com/insert_form0.php?it=740&pt=hominyaya" title="손해평가사 신청 폼"></iframe>
+  </div>
 </body>
 </html>
